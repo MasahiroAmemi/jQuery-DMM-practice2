@@ -1,7 +1,6 @@
-$(function () {
-	$('.box1').click(function() {
-		$('.box1').addClass('box1-ext');  //対象のHTML要素にclass属性を追加する
-	})
+$(function(){
+	$('.box1').on({
+	  'click': function(){$('.box1').addClass('box1-ext');},
+	  'mouseout': function(){$('.box1').removeClass('box1-ext');}
+	});
 });
-
-
